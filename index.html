@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="init()">
+    <input type="file" id="input" />
+    <input type="submit" onclick="submit()" /><br /><br />
+
+    <p>預覽：</p>
+    <div
+      id="showImage"
+      style="width: 144px; height: 144px; background-color: black"
+    ></div>
+    <p>預測結果：<span id="resultValue"></span></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
